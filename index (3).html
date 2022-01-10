@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
+    <style>
+        /** CSS Einheiten**/
+        /** Pixel (px), Prozent(%), Emphasis(em), Root Emphasis(rem) **/
+        /** Standart Schriftgröße 16 Pixel **/
+        /** EM und REM immer in Punktzahlen z.B. 1.5, 2.0, 0.5 **/
+        h1{
+            font-size: 3.rem;
+            font-style: normal;
+            font-weight: bolder;
+            text-decoration: salmon;
+            text-transform: lowercase;
+            font-family: 'The Nautigal;
+            /** https://fonts.google.com/ **/
+            letter-spacing: 12px;
+        }
+        button{
+            background-color: red;
+            color:white;
+            border: 2px solid darkred;
+            border-radius: 12px;
+            padding:5px 10px;
+        }
+        /** CSS Pseudo Klassen lösen ein Event aus z.B. Mauszeiger**/
+        /** Hover Pseudo Klasse**/
+        /** z.B. OriginalSelektor:PseudoKlassenName**/
+        button:hover{ /** Wird angewendet, wenn die Maus mit dem Hover Event den Button berührt**/
+            background-color: white;
+            color: darkred;
+            border: 2px solid rgb(11, 90, 28);
+            padding: 8px 13px;
+        }
+        h1:hover{
+            font-size: 4rem;
+        }
+        ul{
+            /** Default CSS Styling können wir mit dem NONE Wert zurücksetzen**/
+            list-style-type: none;
+            background-color: rgb(63, 63, 60);
+            width:400px;
+            border: 3px solid red;
+            border-radius: 10px;
+        }
+        li{
+            display: inline-block;
+            margin: 3px 15px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            background-color: red;
+            padding: 10px;
+        }
+        a:hover{
+            color:red;
+            background-color: white;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        table, tr, td, th{
+            border: 3px solid black;
+        }
+        .nachname-bg{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hallo Welt!</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil aliquid delectus dolores excepturi molestiae, eaque a vel recusandae sed quibusdam sapiente nostrum cupiditate obcaecati dicta asperiores corporis minus dolor cumque!</p>
+    <button>Bestellen!</button>
+    <ul>
+        <li>
+            <a href="https://www.google.com">Home</a>
+        </li>
+        <li>
+            <a href="https://www.google.com">Produkte</a>
+        </li>
+        <li>
+            <a href="https://www.google.com">Kontakt</a>
+        </li>
+    </ul>
+    <table>
+        <tr>
+            <th>Vorname</th>
+            <th>Nachname</th>
+            <th>Alter</th>
+        </tr>
+        <tr>
+            <td>Florian</td>
+            <td class="nachname-bg">Hahn</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Max</td>
+            <td>Mustermann</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <form>
+                <td>
+                    <input type="text" placeholder="Vorname">
+                </td>
+                <td>
+                    <input type="text" placeholder="Nachname">
+                </td>
+                <td>
+                    <input type="text" placeholder="Alter">
+                </td>
+                <input type="submit" value="Neue Person speichern!">
+            </form>
+        </tr>
+    </table>
+    <img src="https://kumhofer.at/glitzerschrift/holdz/z61d44669d28de.gif" alt="Glitzer Schrift Generator" width="396" height="67"/>
+        
+</body>
+</html>
